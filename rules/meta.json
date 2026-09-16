@@ -5,7 +5,9 @@
   "title": "Open Symbolic Rules - Algebra",
   "description": "General algebraic rewrite and simplification rules.",
   "load_order": [
-    "1-powers/1.1-basic-exponents.json"
+    "1-powers/1.1-basic-exponents.json",
+    "2-logarithms/2.1-basic-logarithms.json",
+    "3-polynomials/3.1-distribution.json"
   ],
   "rule_count": 4,
   "test_count": 3,
