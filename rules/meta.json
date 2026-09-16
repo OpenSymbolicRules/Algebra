@@ -1,11 +1,14 @@
 {
+  "$schema": "open-symbolic-rules/v0.1",
   "osr_version": "0.1.0",
   "domain": "algebra",
   "title": "Open Symbolic Rules - Algebra",
   "description": "General algebraic rewrite and simplification rules.",
-  "load_order": [],
-  "rule_count": 0,
-  "test_count": 0,
+  "load_order": [
+    "1-powers/1.1-basic-exponents.json"
+  ],
+  "rule_count": 4,
+  "test_count": 3,
   "feature_flags": {
     "algebraic_simplification": true
   }
