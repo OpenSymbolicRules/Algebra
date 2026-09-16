@@ -7,10 +7,11 @@
   "load_order": [
     "1-powers/1.1-basic-exponents.json",
     "2-logarithms/2.1-basic-logarithms.json",
-    "3-polynomials/3.1-distribution.json"
+    "3-polynomials/3.1-distribution.json",
+    "4-simplification/4.1-identities.json"
   ],
-  "rule_count": 7,
-  "test_count": 7,
+  "rule_count": 13,
+  "test_count": 13,
   "feature_flags": {
     "algebraic_simplification": true
   }

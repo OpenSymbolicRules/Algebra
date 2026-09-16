@@ -1,0 +1,17 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "4.1",
+  "title": "Additive and Multiplicative Identities",
+  "semantics": {
+    "Add": "openmath:arith1#plus",
+    "Multiply": "openmath:arith1#times"
+  },
+  "rules": [
+    {"id": 1, "description": "Additive identity on the right", "pattern": ["Add", "x_", 0], "constraints": [], "result": "x_"},
+    {"id": 2, "description": "Additive identity on the left", "pattern": ["Add", 0, "x_"], "constraints": [], "result": "x_"},
+    {"id": 3, "description": "Multiplicative identity on the right", "pattern": ["Multiply", "x_", 1], "constraints": [], "result": "x_"},
+    {"id": 4, "description": "Multiplicative identity on the left", "pattern": ["Multiply", 1, "x_"], "constraints": [], "result": "x_"},
+    {"id": 5, "description": "Multiplicative zero on the right", "pattern": ["Multiply", "x_", 0], "constraints": [], "result": 0},
+    {"id": 6, "description": "Multiplicative zero on the left", "pattern": ["Multiply", 0, "x_"], "constraints": [], "result": 0}
+  ]
+}

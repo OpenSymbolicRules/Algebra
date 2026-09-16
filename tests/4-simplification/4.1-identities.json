@@ -1,0 +1,13 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "4.1",
+  "title": "Additive and Multiplicative Identity Tests",
+  "tests": [
+    {"id": 1, "expression": ["Add", "x", 0], "variable": "x", "expected_result": "x", "num_steps": 1, "grade": "A"},
+    {"id": 2, "expression": ["Add", 0, "x"], "variable": "x", "expected_result": "x", "num_steps": 1, "grade": "A"},
+    {"id": 3, "expression": ["Multiply", "x", 1], "variable": "x", "expected_result": "x", "num_steps": 1, "grade": "A"},
+    {"id": 4, "expression": ["Multiply", 1, "x"], "variable": "x", "expected_result": "x", "num_steps": 1, "grade": "A"},
+    {"id": 5, "expression": ["Multiply", "x", 0], "variable": "x", "expected_result": 0, "num_steps": 1, "grade": "A"},
+    {"id": 6, "expression": ["Multiply", 0, "x"], "variable": "x", "expected_result": 0, "num_steps": 1, "grade": "A"}
+  ]
+}
