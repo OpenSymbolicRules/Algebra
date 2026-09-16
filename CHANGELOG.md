@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - OpenMath-semantics fixtures for logarithm and polynomial-distribution rules.
 - GitHub Actions validation of schemas, rules, and test fixtures.
 - Additive and multiplicative identity simplification rules.
+- MIT licensing, an OpenMath attribution notice, and SPDX metadata in the rule manifest.
 
 ### Changed
 - Normalized arithmetic operators, wildcards, and constraints to OSR v0.1 conventions.
