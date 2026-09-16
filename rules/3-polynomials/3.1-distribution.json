@@ -3,16 +3,16 @@
   "section": "3.1",
   "title": "Polynomial Distribution",
   "semantics": {
-    "Add": "openmath:arith1.plus",
-    "Mul": "openmath:arith1.times"
+    "Add": "openmath:arith1#plus",
+    "Multiply": "openmath:arith1#times"
   },
   "rules": [
     {
       "id": 1,
       "description": "Distribute multiplication over addition: a * (b + c) = a*b + a*c",
-      "pattern": ["Mul", "~a", ["Add", "~b", "~c"]],
+      "pattern": ["Multiply", "a_", ["Add", "b_", "c_"]],
       "constraints": [],
-      "result": ["Add", ["Mul", "~a", "~b"], ["Mul", "~a", "~c"]]
+      "result": ["Add", ["Multiply", "a_", "b_"], ["Multiply", "a_", "c_"]]
     }
   ]
 }

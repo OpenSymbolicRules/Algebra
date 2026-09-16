@@ -5,30 +5,39 @@
   "tests": [
     {
       "id": 1,
-      "expression": ["Pow", ["Pow", "x", 2], 3],
+      "expression": ["Power", ["Power", "x", 2], 3],
       "variable": "x",
-      "expected_result": ["Pow", "x", 6],
+      "expected_result": ["Power", "x", 6],
       "num_steps": 1,
       "grade": "A",
       "comment": "Rule 1: (x^2)^3 = x^6"
     },
     {
       "id": 2,
-      "expression": ["Mul", ["Pow", "y", "a"], ["Pow", "y", "b"]],
+      "expression": ["Multiply", ["Power", "y", "a"], ["Power", "y", "b"]],
       "variable": "y",
-      "expected_result": ["Pow", "y", ["Add", "a", "b"]],
+      "expected_result": ["Power", "y", ["Add", "a", "b"]],
       "num_steps": 1,
       "grade": "A",
       "comment": "Rule 2: y^a * y^b = y^(a+b)"
     },
     {
       "id": 3,
-      "expression": ["Pow", "z", 1],
+      "expression": ["Power", "z", 1],
       "variable": "z",
       "expected_result": "z",
       "num_steps": 1,
       "grade": "A",
       "comment": "Rule 3: z^1 = z"
+    },
+    {
+      "id": 4,
+      "expression": ["Power", "z", 0],
+      "variable": "z",
+      "expected_result": 1,
+      "num_steps": 1,
+      "grade": "A",
+      "comment": "Rule 4: z^0 = 1 when z is nonzero"
     }
   ]
 }

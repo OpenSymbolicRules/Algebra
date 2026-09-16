@@ -1,0 +1,15 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "3.1",
+  "title": "Polynomial Distribution Tests",
+  "tests": [
+    {
+      "id": 1,
+      "expression": ["Multiply", "a", ["Add", "b", "c"]],
+      "variable": "a",
+      "expected_result": ["Add", ["Multiply", "a", "b"], ["Multiply", "a", "c"]],
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}

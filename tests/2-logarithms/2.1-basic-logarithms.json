@@ -1,0 +1,23 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "2.1",
+  "title": "Basic Logarithm Rules Tests",
+  "tests": [
+    {
+      "id": 1,
+      "expression": ["Log", ["Multiply", "a", "b"]],
+      "variable": "a",
+      "expected_result": ["Add", ["Log", "a"], ["Log", "b"]],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "expression": ["Log", ["Power", "a", "b"]],
+      "variable": "a",
+      "expected_result": ["Multiply", "b", ["Log", "a"]],
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}

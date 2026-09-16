@@ -14,3 +14,6 @@ By defining algebraic rules in this format, and linking semantics directly to **
 - `rules/`: Algebraic rewriting rules in JSON format
 - `tests/`: Test fixtures to validate correct simplifications
 - `Specification/`: Submodule pointing to the core OSR JSON schemas
+
+Every mathematical operator is mapped to an OpenMath Content Dictionary symbol in
+the rule file's `semantics` object.
