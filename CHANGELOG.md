@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- CI validation that every operator used by a rule has a declared OpenMath
+  semantic mapping.
 - Safe inverse-power and unit-base simplifications.
 - Order-preserving common-factor extraction for differences.
 - Stable `identity` values for rule files, completing canonical `identity:id`
