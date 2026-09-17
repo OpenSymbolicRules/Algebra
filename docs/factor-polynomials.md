@@ -10,5 +10,10 @@ identity simplifications. It includes both order-sensitive forms:
 - `a b + a c → a (b + c)`;
 - `b a + c a → (b + c) a`.
 
+The same two orientations are available for differences:
+
+- `a b - a c → a (b - c)`;
+- `b a - c a → (b - c) a`.
+
 Neither rule exchanges factors, so both remain valid when multiplication is
 not commutative.

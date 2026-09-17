@@ -11,8 +11,8 @@
     "3-polynomials/3.1-distribution.json",
     "4-simplification/4.1-identities.json"
   ],
-  "rule_count": 18,
-  "test_count": 18,
+  "rule_count": 20,
+  "test_count": 20,
   "profiles": {
     "factor_polynomials": {
       "description": "Factor common left and right factors without loading distributive expansion rules.",

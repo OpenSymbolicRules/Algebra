@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Safe inverse-power and unit-base simplifications.
+- Order-preserving common-factor extraction for differences.
 - Stable `identity` values for rule files, completing canonical `identity:id`
   rule identifiers.
 - Conditional inverse rule for the exponential and principal natural logarithm,

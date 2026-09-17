@@ -5,6 +5,7 @@
   "title": "Common-Factor Rules",
   "semantics": {
     "Add": "openmath:arith1#plus",
+    "Subtract": "openmath:arith1#minus",
     "Multiply": "openmath:arith1#times"
   },
   "rules": [
@@ -76,6 +77,78 @@
           {
             "name": "OpenSymbolicRules Algebra",
             "locator": "algebra:3-polynomials/3.2-common-factor:2"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "description": "Factor a common left factor from a difference without assuming commutativity.",
+      "pattern": [
+        "Subtract",
+        [
+          "Multiply",
+          "a_",
+          "b_"
+        ],
+        [
+          "Multiply",
+          "a_",
+          "c_"
+        ]
+      ],
+      "constraints": [],
+      "result": [
+        "Multiply",
+        "a_",
+        [
+          "Subtract",
+          "b_",
+          "c_"
+        ]
+      ],
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:3-polynomials/3.2-common-factor:3"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "description": "Factor a common right factor from a difference without assuming commutativity.",
+      "pattern": [
+        "Subtract",
+        [
+          "Multiply",
+          "b_",
+          "a_"
+        ],
+        [
+          "Multiply",
+          "c_",
+          "a_"
+        ]
+      ],
+      "constraints": [],
+      "result": [
+        "Multiply",
+        [
+          "Subtract",
+          "b_",
+          "c_"
+        ],
+        "a_"
+      ],
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:3-polynomials/3.2-common-factor:4"
           }
         ]
       }

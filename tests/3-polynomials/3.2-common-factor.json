@@ -18,6 +18,22 @@
       "expected_result": ["Multiply", ["Add", "b", "c"], "a"],
       "num_steps": 1,
       "grade": "A"
+    },
+    {
+      "id": 3,
+      "expression": ["Subtract", ["Multiply", "a", "b"], ["Multiply", "a", "c"]],
+      "variable": "a",
+      "expected_result": ["Multiply", "a", ["Subtract", "b", "c"]],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 4,
+      "expression": ["Subtract", ["Multiply", "b", "a"], ["Multiply", "c", "a"]],
+      "variable": "a",
+      "expected_result": ["Multiply", ["Subtract", "b", "c"], "a"],
+      "num_steps": 1,
+      "grade": "A"
     }
   ]
 }
