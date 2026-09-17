@@ -32,7 +32,16 @@
           "a_",
           "c_"
         ]
-      ]
+      ],
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:3-polynomials/3.1-distribution:1"
+          }
+        ]
+      }
     }
   ],
   "identity": "algebra:3-polynomials/3.1-distribution"

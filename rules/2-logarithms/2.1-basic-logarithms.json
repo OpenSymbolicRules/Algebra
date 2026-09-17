@@ -42,7 +42,16 @@
           "b_"
         ]
       ],
-      "comment": "Requires positive arguments to avoid complex branches."
+      "comment": "Requires positive arguments to avoid complex branches.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:2-logarithms/2.1-basic-logarithms:1"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -68,7 +77,16 @@
           "Log",
           "a_"
         ]
-      ]
+      ],
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:2-logarithms/2.1-basic-logarithms:2"
+          }
+        ]
+      }
     },
     {
       "id": 3,
@@ -86,7 +104,16 @@
           "z_"
         ]
       ],
-      "result": "z_"
+      "result": "z_",
+      "provenance": {
+        "method": "transcribed",
+        "sources": [
+          {
+            "name": "Fungrim MathJSON",
+            "locator": "corpus/log.json#d87f6e"
+          }
+        ]
+      }
     }
   ],
   "identity": "algebra:2-logarithms/2.1-basic-logarithms"

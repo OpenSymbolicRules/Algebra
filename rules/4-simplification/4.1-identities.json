@@ -16,7 +16,16 @@
         0
       ],
       "constraints": [],
-      "result": "x_"
+      "result": "x_",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:4-simplification/4.1-identities:1"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -27,7 +36,16 @@
         "x_"
       ],
       "constraints": [],
-      "result": "x_"
+      "result": "x_",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:4-simplification/4.1-identities:2"
+          }
+        ]
+      }
     },
     {
       "id": 3,
@@ -38,7 +56,16 @@
         1
       ],
       "constraints": [],
-      "result": "x_"
+      "result": "x_",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:4-simplification/4.1-identities:3"
+          }
+        ]
+      }
     },
     {
       "id": 4,
@@ -49,7 +76,16 @@
         "x_"
       ],
       "constraints": [],
-      "result": "x_"
+      "result": "x_",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:4-simplification/4.1-identities:4"
+          }
+        ]
+      }
     },
     {
       "id": 5,
@@ -60,7 +96,16 @@
         0
       ],
       "constraints": [],
-      "result": 0
+      "result": 0,
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:4-simplification/4.1-identities:5"
+          }
+        ]
+      }
     },
     {
       "id": 6,
@@ -71,7 +116,16 @@
         "x_"
       ],
       "constraints": [],
-      "result": 0
+      "result": 0,
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:4-simplification/4.1-identities:6"
+          }
+        ]
+      }
     }
   ],
   "identity": "algebra:4-simplification/4.1-identities"

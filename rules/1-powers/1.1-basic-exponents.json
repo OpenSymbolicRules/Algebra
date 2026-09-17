@@ -39,7 +39,16 @@
           "q_"
         ]
       ],
-      "comment": "Fundamental rule of exponents. Integer constraint prevents multivalued complex branches."
+      "comment": "Fundamental rule of exponents. Integer constraint prevents multivalued complex branches.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:1-powers/1.1-basic-exponents:1"
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -67,7 +76,16 @@
           "q_"
         ]
       ],
-      "comment": "Base must be strictly identical."
+      "comment": "Base must be strictly identical.",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:1-powers/1.1-basic-exponents:2"
+          }
+        ]
+      }
     },
     {
       "id": 3,
@@ -78,7 +96,16 @@
         1
       ],
       "constraints": [],
-      "result": "x_"
+      "result": "x_",
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:1-powers/1.1-basic-exponents:3"
+          }
+        ]
+      }
     },
     {
       "id": 4,
@@ -94,7 +121,16 @@
           "x_"
         ]
       ],
-      "result": 1
+      "result": 1,
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:1-powers/1.1-basic-exponents:4"
+          }
+        ]
+      }
     }
   ],
   "identity": "algebra:1-powers/1.1-basic-exponents"
