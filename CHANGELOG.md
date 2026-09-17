@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   rule identifiers.
 - Conditional inverse rule for the exponential and principal natural logarithm,
   with an OpenMath declaration and Fungrim-derived fixture.
+- `factor_polynomials` profile with order-preserving common-left and
+  common-right factor rules.
 - Initial structure for the Algebra module
 - Submodule link to OSR Specification schemas
 - OpenMath-semantics fixtures for logarithm and polynomial-distribution rules.

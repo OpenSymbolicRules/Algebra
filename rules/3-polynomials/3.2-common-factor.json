@@ -1,0 +1,26 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "identity": "algebra:3-polynomials/3.2-common-factor",
+  "section": "3.2",
+  "title": "Common-Factor Rules",
+  "semantics": {
+    "Add": "openmath:arith1#plus",
+    "Multiply": "openmath:arith1#times"
+  },
+  "rules": [
+    {
+      "id": 1,
+      "description": "Factor a common left factor without assuming commutativity.",
+      "pattern": ["Add", ["Multiply", "a_", "b_"], ["Multiply", "a_", "c_"]],
+      "constraints": [],
+      "result": ["Multiply", "a_", ["Add", "b_", "c_"]]
+    },
+    {
+      "id": 2,
+      "description": "Factor a common right factor without assuming commutativity.",
+      "pattern": ["Add", ["Multiply", "b_", "a_"], ["Multiply", "c_", "a_"]],
+      "constraints": [],
+      "result": ["Multiply", ["Add", "b_", "c_"], "a_"]
+    }
+  ]
+}

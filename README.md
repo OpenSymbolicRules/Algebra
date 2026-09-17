@@ -21,6 +21,12 @@ the rule file's `semantics` object.
 The logarithm inverse rule is independently encoded from Fungrim MathJSON entry
 `d87f6e`; its nonzero argument condition is preserved.
 
+## Profiles
+
+The default manifest performs distributive expansion. Use the
+`factor_polynomials` profile for common-factor extraction; the two directions
+are intentionally separate to prevent an expansion/factorisation rewrite loop.
+
 ## License
 
 This repository is licensed under the [MIT License](LICENSE). OpenMath

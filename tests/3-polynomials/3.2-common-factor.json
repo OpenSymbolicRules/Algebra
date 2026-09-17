@@ -1,0 +1,23 @@
+{
+  "$schema": "open-symbolic-rules/v0.1",
+  "section": "3.2",
+  "title": "Common-Factor Tests",
+  "tests": [
+    {
+      "id": 1,
+      "expression": ["Add", ["Multiply", "a", "b"], ["Multiply", "a", "c"]],
+      "variable": "a",
+      "expected_result": ["Multiply", "a", ["Add", "b", "c"]],
+      "num_steps": 1,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "expression": ["Add", ["Multiply", "b", "a"], ["Multiply", "c", "a"]],
+      "variable": "a",
+      "expected_result": ["Multiply", ["Add", "b", "c"], "a"],
+      "num_steps": 1,
+      "grade": "A"
+    }
+  ]
+}
