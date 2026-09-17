@@ -4,6 +4,7 @@
   "title": "Basic Logarithm Rules",
   "semantics": {
     "Log": "openmath:transc1#ln",
+    "Exp": "openmath:transc1#exp",
     "Add": "openmath:arith1#plus",
     "Multiply": "openmath:arith1#times",
     "Power": "openmath:arith1#power"
@@ -68,6 +69,24 @@
           "a_"
         ]
       ]
+    },
+    {
+      "id": 3,
+      "description": "Exponential and principal natural logarithm are inverse for nonzero complex arguments (Fungrim d87f6e).",
+      "pattern": [
+        "Exp",
+        [
+          "Log",
+          "z_"
+        ]
+      ],
+      "constraints": [
+        [
+          "NonzeroQ",
+          "z_"
+        ]
+      ],
+      "result": "z_"
     }
   ],
   "identity": "algebra:2-logarithms/2.1-basic-logarithms"

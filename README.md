@@ -18,6 +18,9 @@ By defining algebraic rules in this format, and linking semantics directly to **
 Every mathematical operator is mapped to an OpenMath Content Dictionary symbol in
 the rule file's `semantics` object.
 
+The logarithm inverse rule is independently encoded from Fungrim MathJSON entry
+`d87f6e`; its nonzero argument condition is preserved.
+
 ## License
 
 This repository is licensed under the [MIT License](LICENSE). OpenMath

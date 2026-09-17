@@ -11,8 +11,8 @@
     "3-polynomials/3.1-distribution.json",
     "4-simplification/4.1-identities.json"
   ],
-  "rule_count": 13,
-  "test_count": 13,
+  "rule_count": 14,
+  "test_count": 14,
   "feature_flags": {
     "algebraic_simplification": true
   }

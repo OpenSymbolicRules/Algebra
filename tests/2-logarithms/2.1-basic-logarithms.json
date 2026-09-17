@@ -18,6 +18,14 @@
       "expected_result": ["Multiply", "b", ["Log", "a"]],
       "num_steps": 1,
       "grade": "A"
+    },
+    {
+      "id": 3,
+      "expression": ["Exp", ["Log", "z"]],
+      "variable": "z",
+      "expected_result": "z",
+      "num_steps": 1,
+      "grade": "A"
     }
   ]
 }
