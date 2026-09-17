@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Safe inverse-power and unit-base simplifications.
 - Stable `identity` values for rule files, completing canonical `identity:id`
   rule identifiers.
 - Conditional inverse rule for the exponential and principal natural logarithm,
@@ -23,5 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MIT licensing, an OpenMath attribution notice, and SPDX metadata in the rule manifest.
 
 ### Changed
+- Restrict product-of-powers merging to integer exponents, preventing an
+  invalid rewrite for principal complex powers.
 - Normalized arithmetic operators, wildcards, and constraints to OSR v0.1 conventions.
 - Declared every mathematical operator with its OpenMath Content Dictionary symbol.

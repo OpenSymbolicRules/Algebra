@@ -14,12 +14,12 @@
     },
     {
       "id": 2,
-      "expression": ["Multiply", ["Power", "y", "a"], ["Power", "y", "b"]],
+      "expression": ["Multiply", ["Power", "y", 2], ["Power", "y", 3]],
       "variable": "y",
-      "expected_result": ["Power", "y", ["Add", "a", "b"]],
+      "expected_result": ["Power", "y", ["Add", 2, 3]],
       "num_steps": 1,
       "grade": "A",
-      "comment": "Rule 2: y^a * y^b = y^(a+b)"
+      "comment": "Rule 2: y^2 * y^3 = y^(2+3), using integer exponents."
     },
     {
       "id": 3,
@@ -38,6 +38,24 @@
       "num_steps": 1,
       "grade": "A",
       "comment": "Rule 4: z^0 = 1 when z is nonzero"
+    },
+    {
+      "id": 5,
+      "expression": ["Power", "z", -1],
+      "variable": "z",
+      "expected_result": ["Divide", 1, "z"],
+      "num_steps": 1,
+      "grade": "A",
+      "comment": "Rule 5: z^(-1) = 1/z when z is nonzero"
+    },
+    {
+      "id": 6,
+      "expression": ["Power", 1, "z"],
+      "variable": "z",
+      "expected_result": 1,
+      "num_steps": 1,
+      "grade": "A",
+      "comment": "Rule 6: 1^z = 1"
     }
   ]
 }

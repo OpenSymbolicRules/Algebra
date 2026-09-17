@@ -5,7 +5,8 @@
   "semantics": {
     "Add": "openmath:arith1#plus",
     "Multiply": "openmath:arith1#times",
-    "Power": "openmath:arith1#power"
+    "Power": "openmath:arith1#power",
+    "Divide": "openmath:arith1#divide"
   },
   "rules": [
     {
@@ -52,7 +53,7 @@
     },
     {
       "id": 2,
-      "description": "Product of powers: x^p * x^q = x^(p+q)",
+      "description": "Product of integer powers: x^p * x^q = x^(p+q)",
       "pattern": [
         "Multiply",
         [
@@ -66,7 +67,16 @@
           "q_"
         ]
       ],
-      "constraints": [],
+      "constraints": [
+        [
+          "IntegerQ",
+          "p_"
+        ],
+        [
+          "IntegerQ",
+          "q_"
+        ]
+      ],
       "result": [
         "Power",
         "x_",
@@ -76,7 +86,7 @@
           "q_"
         ]
       ],
-      "comment": "Base must be strictly identical.",
+      "comment": "Base must be strictly identical. Integer exponents avoid invalid principal-power rewrites over complex numbers.",
       "provenance": {
         "method": "authored",
         "sources": [
@@ -128,6 +138,55 @@
           {
             "name": "OpenSymbolicRules Algebra",
             "locator": "algebra:1-powers/1.1-basic-exponents:4"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "description": "Inverse power: x^(-1) = 1/x for x != 0",
+      "pattern": [
+        "Power",
+        "x_",
+        -1
+      ],
+      "constraints": [
+        [
+          "NonzeroQ",
+          "x_"
+        ]
+      ],
+      "result": [
+        "Divide",
+        1,
+        "x_"
+      ],
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:1-powers/1.1-basic-exponents:5"
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "description": "Unit base: 1^x = 1",
+      "pattern": [
+        "Power",
+        1,
+        "x_"
+      ],
+      "constraints": [],
+      "result": 1,
+      "provenance": {
+        "method": "authored",
+        "sources": [
+          {
+            "name": "OpenSymbolicRules Algebra",
+            "locator": "algebra:1-powers/1.1-basic-exponents:6"
           }
         ]
       }
