@@ -11,37 +11,91 @@
     {
       "id": 1,
       "description": "Power of a power: (x^p)^q = x^(p*q) for integer powers",
-      "pattern": ["Power", ["Power", "x_", "p_"], "q_"],
-      "constraints": [
-        ["IntegerQ", "p_"],
-        ["IntegerQ", "q_"]
+      "pattern": [
+        "Power",
+        [
+          "Power",
+          "x_",
+          "p_"
+        ],
+        "q_"
       ],
-      "result": ["Power", "x_", ["Multiply", "p_", "q_"]],
+      "constraints": [
+        [
+          "IntegerQ",
+          "p_"
+        ],
+        [
+          "IntegerQ",
+          "q_"
+        ]
+      ],
+      "result": [
+        "Power",
+        "x_",
+        [
+          "Multiply",
+          "p_",
+          "q_"
+        ]
+      ],
       "comment": "Fundamental rule of exponents. Integer constraint prevents multivalued complex branches."
     },
     {
       "id": 2,
       "description": "Product of powers: x^p * x^q = x^(p+q)",
-      "pattern": ["Multiply", ["Power", "x_", "p_"], ["Power", "x_", "q_"]],
+      "pattern": [
+        "Multiply",
+        [
+          "Power",
+          "x_",
+          "p_"
+        ],
+        [
+          "Power",
+          "x_",
+          "q_"
+        ]
+      ],
       "constraints": [],
-      "result": ["Power", "x_", ["Add", "p_", "q_"]],
+      "result": [
+        "Power",
+        "x_",
+        [
+          "Add",
+          "p_",
+          "q_"
+        ]
+      ],
       "comment": "Base must be strictly identical."
     },
     {
       "id": 3,
       "description": "Identity power: x^1 = x",
-      "pattern": ["Power", "x_", 1],
+      "pattern": [
+        "Power",
+        "x_",
+        1
+      ],
       "constraints": [],
       "result": "x_"
     },
     {
       "id": 4,
       "description": "Zero power: x^0 = 1 for x != 0",
-      "pattern": ["Power", "x_", 0],
+      "pattern": [
+        "Power",
+        "x_",
+        0
+      ],
       "constraints": [
-        ["NonzeroQ", "x_"]
+        [
+          "NonzeroQ",
+          "x_"
+        ]
       ],
       "result": 1
     }
-  ]
+  ],
+  "identity": "algebra:1-powers/1.1-basic-exponents"
 }

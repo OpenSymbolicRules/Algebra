@@ -12,22 +12,63 @@
     {
       "id": 1,
       "description": "Log of a product: log(a * b) = log(a) + log(b)",
-      "pattern": ["Log", ["Multiply", "a_", "b_"]],
-      "constraints": [
-        ["PositiveQ", "a_"],
-        ["PositiveQ", "b_"]
+      "pattern": [
+        "Log",
+        [
+          "Multiply",
+          "a_",
+          "b_"
+        ]
       ],
-      "result": ["Add", ["Log", "a_"], ["Log", "b_"]],
+      "constraints": [
+        [
+          "PositiveQ",
+          "a_"
+        ],
+        [
+          "PositiveQ",
+          "b_"
+        ]
+      ],
+      "result": [
+        "Add",
+        [
+          "Log",
+          "a_"
+        ],
+        [
+          "Log",
+          "b_"
+        ]
+      ],
       "comment": "Requires positive arguments to avoid complex branches."
     },
     {
       "id": 2,
       "description": "Log of a power: log(a^b) = b * log(a)",
-      "pattern": ["Log", ["Power", "a_", "b_"]],
-      "constraints": [
-        ["PositiveQ", "a_"]
+      "pattern": [
+        "Log",
+        [
+          "Power",
+          "a_",
+          "b_"
+        ]
       ],
-      "result": ["Multiply", "b_", ["Log", "a_"]]
+      "constraints": [
+        [
+          "PositiveQ",
+          "a_"
+        ]
+      ],
+      "result": [
+        "Multiply",
+        "b_",
+        [
+          "Log",
+          "a_"
+        ]
+      ]
     }
-  ]
+  ],
+  "identity": "algebra:2-logarithms/2.1-basic-logarithms"
 }
