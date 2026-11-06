@@ -27,6 +27,16 @@ The default manifest performs distributive expansion. Use the
 `factor_polynomials` profile for common-factor extraction; the two directions
 are intentionally separate to prevent an expansion/factorisation rewrite loop.
 
+## OSR v1
+
+`v1/` holds the rule set in the OSR v1 format, generated from Lean proofs
+(`OpenSymbolicRules/Lean`) and published by `OpenSymbolicRules/Verification`.
+See [docs/osr-v1.md](docs/osr-v1.md).  Check it with:
+```bash
+just check        # v0.1 schemas, semantic closure and v1 files
+just v1 <report>  # also compare v1/ with a Verification report directory
+```
+
 ## License
 
 This repository is licensed under the [MIT License](LICENSE). OpenMath
