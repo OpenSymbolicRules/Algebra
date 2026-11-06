@@ -30,15 +30,15 @@ jobs:
     name: Check generated OSR v1 files
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           submodules: recursive
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           repository: OpenSymbolicRules/Verification
           ref: 921520ec34dd97a0086ffa65bb1faf44cf8b414d
           path: verification
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: python -m pip install check-jsonschema==0.38.0
