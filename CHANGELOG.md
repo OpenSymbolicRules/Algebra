@@ -32,6 +32,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MIT licensing, an OpenMath attribution notice, and SPDX metadata in the rule manifest.
 
 ### Changed
+- Refresh the generated OSR v1 files from Lean source digest `4032322e…`
+  after the structural Calculus premise audit; rule statements and
+  certification counts are unchanged.
 - Updated the Specification submodule to the OSR v1 draft.
 - Restrict product-of-powers merging to integer exponents, preventing an
   invalid rewrite for principal complex powers.
