@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- v1 artifacts refreshed from Verification report `f5ecf169…`: the rule set
+  gains the authored rule `algebra.root.sqrt_sq_nonneg` (`sqrt(a^2) ⟶ a` for
+  `a ≥ 0`, proved over ℝ by `OSR.Algebra.sqrtSq_real`); 21 rules.
 - v1 artifacts refreshed from Verification report `091039ab…` (Integration
   reports 279 more rules as not migrated; this rule set is unchanged).
 - v1 artifacts refreshed from Verification report `cea7b8c1…` (40 more
