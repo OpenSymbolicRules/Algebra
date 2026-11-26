@@ -6,7 +6,7 @@ by hand:
 
 | File | Content |
 |---|---|
-| `v1/algebra.osr.json` | The 21 rules: OpenMath patterns, conditions, profiles, and per-domain verification records (Lean theorem, status, assurance). |
+| `v1/algebra.osr.json` | The 24 rules: OpenMath patterns, conditions, profiles, and per-domain verification records (Lean theorem, status, assurance). |
 | `v1/algebra.report.json` | Machine-readable audit: metrics per domain and the termination proof of every profile. |
 | `v1/algebra.report.md` | The same audit for humans. |
 
@@ -28,12 +28,19 @@ The v0.1 files in `rules/` remain for the v0.1 loader of OpenSymbolicRules.jl
 and will be removed in a later breaking release.  In v1:
 
 - all 20 v0.1 rules are migrated and proved: 20 over ℝ, 18 over ℂ;
-- one more rule is authored in OSR, without a v0.1 counterpart:
-  `algebra.root.sqrt_sq_nonneg`, `sqrt(a^2) ⟶ a` for `a ≥ 0` (real principal
-  square root, `arith1#root` with index 2), proved over ℝ by
-  `OSR.Algebra.sqrtSq_real` (Mathlib `Real.sqrt_sq`). It is not stated over ℂ,
-  where `arith1#root` has no interpretation, and, being conditional, it is
-  never applied by the reference engine.
+- four square-root rules are authored in OSR, without a v0.1 counterpart, with
+  the real principal square root (`arith1#root` with index 2), each proved over
+  ℝ and not stated over ℂ (`arith1#root` and `arith1#abs` have no complex
+  interpretation):
+  - `algebra.root.sqrt_sq_nonneg`: `sqrt(a^2) ⟶ a` for `a ≥ 0`
+    (`OSR.Algebra.sqrtSq_real`, Mathlib `Real.sqrt_sq`);
+  - `algebra.root.sqrt_sq_abs`: `sqrt(a^2) ⟶ |a|`, unconditional, so the
+    reference engine applies it (`OSR.Algebra.sqrtSqAbs_real`, Mathlib
+    `Real.sqrt_sq_eq_abs`);
+  - `algebra.root.sq_sqrt`: `(sqrt a)^2 ⟶ a` for `a ≥ 0`
+    (`OSR.Algebra.sqSqrt_real`, Mathlib `Real.sq_sqrt`);
+  - `algebra.root.sqrt_mul`: `sqrt(a b) ⟶ sqrt a sqrt b` for `a, b ≥ 0`
+    (`OSR.Algebra.sqrtMul_real`, Mathlib `Real.sqrt_mul`).
   `ln(a b) = ln a + ln b` and `ln(a^b) = b ln a` are stated over ℝ only,
   because their positivity conditions have no complex meaning;
 - `IntegerQ p` becomes the condition `p ∈ ℤ` (`set1#in` with `setname1#Z`);
